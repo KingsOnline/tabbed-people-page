@@ -1,11 +1,33 @@
 
 .full-bleed {
-    background-color: green;
     width: 100%;
-    max-width:1920px;
+
+      background: url(image.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     margin: 0 auto;
-    height:600px;
-} 
+    height: 800px;
+    max-height:800px;
+    position: relative;
+}
+
+.hotspot {
+    border: none;
+    outline: none;
+    background: none;
+    z-index: 2;
+    height: 600px;
+    width: 300px;
+    position: absolute;
+}
+
+.hotspot a {
+    display:block;
+    height:100%;
+    width:100%;
+}
 
 .wrapper {
     width: 1440px;

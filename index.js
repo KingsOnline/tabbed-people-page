@@ -15,6 +15,11 @@ $(document).ready(function() {
 
         //window.history.pushState('page2', 'Title', '/page2.php');
     });
+
+    $('.hotspot').on('click', function(e)  {
+    	openTab('#' + this.id)
+    });
+
 });
 
 function openTab(url){
