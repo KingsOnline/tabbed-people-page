@@ -1,15 +1,13 @@
 
 .full-bleed {
     width: 100%;
-
-      background: url(image.jpg) no-repeat center center fixed; 
+      background: url("image.jpg") no-repeat center top fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
     margin: 0 auto;
     height: 800px;
-    max-height:800px;
     position: relative;
 }
 
@@ -37,7 +35,6 @@
 /*----- Tabs -----*/
 .tabs {
     width:100%;
-    max-width: 1920px;
     display:inline-block;
 }
 
@@ -96,4 +93,45 @@ li.active a, li.active a:hover {
 
 .tab.active {
     display:block;
+}
+
+@media (max-width: 1920px) {
+    .full-bleed{
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      -o-background-size: contain;
+      background-size: contain;
+  }
+}
+
+@media (max-width: 1440px) {
+    .hotspot {
+        height: 30%;
+        width: 15%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .tab-content {
+    width: 70%;
+    margin: 0;
+    }
+
+    .tab-links {
+        width: 150px;
+        margin-right: 40px;
+    }
+
+    .full-bleed {
+         height: 45vh;
+    }
+}
+
+@media (max-width: 800px) {
+    .full-bleed {
+         height: 30vh;
+    }
+
 }
