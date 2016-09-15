@@ -30,17 +30,22 @@ $(document).ready(function() {
     	}
     });
 
-	$(window).resize(function(){
-		resize();
-	});    
 
+	resize();
 });
 
+
+$(window).resize(function(){
+	resize();
+});    
+
 function resize() {
-	 if($(window).width() < 500){
-	 	console.log($(window).width());
+	 if($(window).width() < 750){
 		  $('.tab-links').removeClass('visible').addClass('mobile');
 		  $('.hamburger').addClass('visible');
+ 	} else {
+		  $('.tab-links').addClass('visible').removeClass('mobile');
+		  $('.hamburger').removeClass('visible');
  	}
 }
 

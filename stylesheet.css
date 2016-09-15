@@ -157,9 +157,13 @@ li.active a, li.active a:hover {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 750px) {
     .full-bleed {
          height: 30vh;
+    }
+
+    .tab-content {
+        width: 100%;
     }
 
 }
