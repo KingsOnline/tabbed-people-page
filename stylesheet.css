@@ -1,4 +1,9 @@
 
+body {
+    overflow-x:hidden;
+ font-family: 'Open Sans', sans-serif;
+}
+
 .full-bleed {
     width: 100%;
       background: url("image.jpg") no-repeat center top fixed; 
@@ -53,6 +58,16 @@
     width: 200px;
     background-color: #f1f1f1;
     float: left;
+    display: none;
+}
+
+.tab-links.visible {
+    display: block;
+
+}
+
+.tab-links.mobile {
+    position: fixed;
 }
 
 .tab-links a {
@@ -93,6 +108,19 @@ li.active a, li.active a:hover {
 
 .tab.active {
     display:block;
+}
+
+.hamburger {
+    display: none;
+}
+
+.hamburger.visible {
+    display: block;
+}
+
+.hamburger.expanded {
+    position: fixed;
+    left: 200px;
 }
 
 @media (max-width: 1920px) {

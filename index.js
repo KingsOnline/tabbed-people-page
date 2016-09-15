@@ -20,7 +20,29 @@ $(document).ready(function() {
     	openTab('#' + this.id)
     });
 
+    $('.hamburger').on('click', function(e)  {
+    	if($('.tab-links').hasClass('visible')) {
+    		$('.tab-links').removeClass('visible');
+    		$('.hamburger').removeClass('expanded');
+    	} else {
+    		$('.tab-links').addClass('visible');
+    		$('.hamburger').addClass('expanded');
+    	}
+    });
+
+	$(window).resize(function(){
+		resize();
+	});    
+
 });
+
+function resize() {
+	 if($(window).width() < 500){
+	 	console.log($(window).width());
+		  $('.tab-links').removeClass('visible').addClass('mobile');
+		  $('.hamburger').addClass('visible');
+ 	}
+}
 
 function openTab(url){
 	if ($(url).length > 0) {
