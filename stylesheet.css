@@ -1,18 +1,16 @@
 
-.hero {
+.full-bleed {
     width: 100%;
+
+      background: url(image.jpg) no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
     margin: 0 auto;
     height: 800px;
+    max-height:800px;
     position: relative;
-}
-
-.hero-image {
-    height: auto;
-  background: no-repeat center top fixed;
-        -webkit-background-size: contain;
-      -moz-background-size: contain;
-      -o-background-size: contain;
-      background-size: contain;
 }
 
 .hotspot {
@@ -23,19 +21,6 @@
     height: 600px;
     width: 300px;
     position: absolute;
-}
-
-.team-title {
-    position: absolute;
-    margin: 0 auto;
-    left: 0;
-    right: 0;
-    width: 30%;
-    text-align: center;
-    padding: 40px;
-    background: red;
-    color: white;
-    font-size: 36px;
 }
 
 .hotspot a {
@@ -112,21 +97,3 @@ li.active a, li.active a:hover {
 .tab.active {
     display:block;
 }
-
-/*----- Tablet -----*/
-
-@media (min-width: 1920px) {
-  .hero {
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-  }
-}
-
-@media (max-width: 1300px) {
-    .hero {
-        height: 400px;
-    }
-}
-
