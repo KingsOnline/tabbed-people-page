@@ -30,6 +30,10 @@ $(document).ready(function() {
     	}
     });
 
+    $('.tab').on('click', function(e)  {
+		$('.tab-links').removeClass('visible');
+		$('.hamburger').removeClass('expanded');
+    });
 
 	resize();
 });
@@ -53,7 +57,7 @@ function openTab(url){
 	if ($(url).length > 0) {
 		console.log($(url));
    		 $('.tab-content').find(url).show().siblings().hide();
-		$('.tab-links').find(url).parent('li').addClass('active').siblings().removeClass('active');	
+		$('.tab-links').find(url).parent('li').addClass('active').siblings().removeClass('active');
 	} else {
 	 	$('.tab-content').find('#tab1').show().siblings().hide();
 		$('.tab-links').find('#tab1').parent('li').addClass('active').siblings().removeClass('active');	
