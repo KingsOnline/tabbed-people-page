@@ -8,6 +8,7 @@ A fully responsive 'about me' page for team of people.
 * Tabbed navigation with details on each staff memember
 * Hotspot navigation that allows you to press a staff memeber to open their tab
 * A link hash can be attached. If so the selected persons tab is opened on load
+* On mobile view show a hamburger icon to show/hide tab navigation. Hides on resize.
 
 ## Todo
 
